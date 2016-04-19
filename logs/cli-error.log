@@ -1,0 +1,60 @@
+2016-04-14 19:39:51 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 La table 'testblogdb.post' n'existe pas
+Stack Trace:
+#0 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'post', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('post', Array)
+#2 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('post')
+#3 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'post', 'Post')
+#7 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Post')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('post')
+#9 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\Shell.php(456): call_user_func_array(Array, Array)
+#10 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#11 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 C:\wamp\www\test2.com\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2016-04-16 16:42:54 Error: [Cake\Database\Exception] SQLSTATE[HY000]: General error: 1356 View 'testblogdb.comment' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+Stack Trace:
+#0 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'comment', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('comment', Array)
+#2 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('comment')
+#3 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CommentTable))
+#6 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CommentTable), 'comment', 'Comment')
+#7 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Comment')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('comment')
+#9 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\Shell.php(456): call_user_func_array(Array, Array)
+#10 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#11 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 C:\wamp\www\test2.com\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2016-04-16 16:42:57 Error: [Cake\Database\Exception] SQLSTATE[HY000]: General error: 1356 View 'testblogdb.comment' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+Stack Trace:
+#0 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'comment', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('comment', Array)
+#2 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('comment')
+#3 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CommentTable))
+#6 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CommentTable), 'comment', 'Comment')
+#7 C:\wamp\www\test2.com\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Comment')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('comment')
+#9 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\Shell.php(456): call_user_func_array(Array, Array)
+#10 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#11 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 C:\wamp\www\test2.com\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 C:\wamp\www\test2.com\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
