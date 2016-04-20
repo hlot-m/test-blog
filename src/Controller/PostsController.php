@@ -47,8 +47,8 @@ class PostsController extends AppController
 	    $this->set('comments' ,$this->Posts->Comments->findAllByIdPost ($id));
 
     }
-
-    /**
+	
+	/**
      * Add method
      *
      * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.

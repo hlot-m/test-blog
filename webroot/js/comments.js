@@ -33,7 +33,7 @@ $(document).ready(function(){
 		}
 		
 		// Validating email address through a regular expression.
-		function validateEmail(sEmail) {
+		function validateEmail(email) {
 			var email=$("#email").val();
 			var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
 			if (filter.test(email)) {
